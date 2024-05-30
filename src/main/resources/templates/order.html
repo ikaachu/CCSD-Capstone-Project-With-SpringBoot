@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dessertify-Best dessert Ever</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+
+<body>
+    <style>
+  
+
+.progress-container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.progress-container::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 90%;
+  top: 31%;
+
+  left: 1rem;
+  background-color: var(--grey);
+  z-index: 0;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  top: 33%;
+  width: 0;
+  transform: translateY(-50%);
+  background-color: var(--secondary);
+  transition: width 0.2s;
+
+  z-index: 1;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 500;
+  color: var(--black);
+  z-index: 2;
+}
+
+.progress-step .fa-solid {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey);
+  height: 50px;
+  width: 50px;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 3px solid var(--grey);
+  margin-bottom: 10px;
+  transition: border 0.2s, color 0.2s;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-container .btn {
+  padding: 0.5rem 1.5rem;
+  margin: 0 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  color: var(--white);
+  font-weight: 500;
+  background-color: var(--secondary);
+}
+
+.progress-step .fa-solid.active {
+  border: 3px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.btn.disabled {
+  background-color: var(--grey);
+  color: var(--white);
+  cursor: not-allowed;
+}
+
+/*Order details*/
+
+
+
+.card {
+    border: 0;
+    display: flex;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 20, .08), 0 1px 2px rgba(0, 0, 20, .08);
+}
+
+
+
+.btn-primary {
+    color:white; 
+    font-family: Arial ;
+    font-size: 0.875rem;
+    height: 1.5;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+    .small-img {
+        width: 200px;
+        height: 200PX; /* Maintain aspect ratio */
+    }
+
+
+
+    </style>
+    <div class="preloader">
+        <div class="preloader-body">
+          <div class="cssload-bell">
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Dessertify<span class="text-secondary"></span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="feature.html" class="nav-item nav-link">Features</a>
+                    <a href="product.html" class="nav-item nav-link">Products</a>
+                    <a href="review.html" class="nav-item nav-link">Review</a>
+                    <a href="order.html" class="nav-item nav-link">Order</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    </a>
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
+                        <small class="fa fa-user text-body"></small>
+                    </a>
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="cart.html">
+                        <small class="fa fa-shopping-bag text-body"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Order Details</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Order Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+<!--Order details Start-->
+
+ 
+ <div class="container-fluid bg-light bg-icon py-6">
+    <div class="container">
+        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-5 mb-3">Order Details</h1>
+            <p>Track your purchase order</p>
+        </div>
+
+        <div class="wrapper-container"> <!-- New div with class wrapper-container -->
+        <!-- <div class="wrapper">                
+            <div class="content"></div>
+            <div class="rate-box">
+                <div class="wrapper">
+                    <div class="progress-container">
+                      <div class="progress" id="progress"></div>
+                      <div class="progress-step">
+                        <i class="fa-solid fa-cart-shopping active"></i>
+                        Place Order
+                      </div>
+
+                      <div class="progress-step">
+                        <i class="fa-solid fa-box"></i>
+                        Pickup
+                      </div>
+
+                      <div class="progress-step">
+                        <i class="fa-solid fa-truck"></i>
+                        Out of Delivery
+                      </div>
+
+                      <div class="progress-step">
+                        <i class="fa-solid fa-house"></i>
+                        Delivered
+                      </div>            
+                                                
+                     
+
+
+                    </div>
+                    <br>
+                    <br> -->
+
+                    <div class="row">
+                      
+                        <div class="col-lg-7 col-xxl-9 col-12">
+                          <div class="card">
+
+                            
+                            <div class="card-header">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h4 class="mb-1">Order ID: 01</h4>
+                                  <!-- <div class="d-flex align-items-center">
+                                    <small>Order Date: October 03,2023 at 6:31 pm</small> <span class="badge badge-success-soft ms-2">Paid</span>
+                                  </div> -->
+                                </div>
+                                <div>
+                                  <a href="#!" class="btn btn-primary">Invoice</a>
+                                </div>
+                              </div>
+          
+                            </div>
+                            <div class="card-body">
+                              <div class="table-responsive table-card">
+                                <table class="table text-nowrap mb-0 table-centered">
+                                  <thead class="table-light">
+                                    <tr>
+          
+                                      <th scope="col">Products</th>
+                                      <th scope="col">Items</th>
+                                      <th scope="col">Amounts</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+          
+                                      <td>
+                                        <div class="d-flex align-items-center">
+                                          <a href="#!"><img src="img/cakes/Charlotte Ma Belle.PNG" alt="Image" class="img-4by3-md rounded-3 small-img"></a>
+                                          <div class="ms-3">
+                                            <h5 class="mb-0"> <a href="#!" class="text-inherit">Charlotte Ma Belle</a></h5>
+                                            <small>SKU: 1</small>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>1</td>
+                                      <td>RM70.00</td>
+                                    </tr>
+                                    <tr>
+          
+                                      <td>
+                                        <div class="d-flex align-items-center">
+                                          <a href="#!"><img src="img/cakes/Chocolate Cake.jpg" alt="Image" class="img-4by3-md rounded-3 small-img""></a>
+                                          <div class="ms-3">
+                                            <h5 class="mb-0"> <a href="#!" class="text-inherit">Chocolate Cake
+                                               </a></h5>
+                                            <small>SKU: 1</small>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>1</td>
+                                      <td>RM60.00</td>
+                                    </tr>
+                                    <tr>
+          
+                                      <td>
+                                        <div class="d-flex align-items-center">
+                                          <a href="#!"><img src="img/cakes/Charlotte Violet.PNG" alt="Image" class="img-4by3-md rounded-3 small-img""></a>
+                                          <div class="ms-3">
+                                            <h5 class="mb-0"> <a href="#!" class="text-inherit">Charlotte Violet</a></h5>
+                                            <small>SKU: 1</small>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>1</td>
+                                      <td>RM70.00</td>
+                                    </tr>
+                                    <tr>
+          
+                                      <!-- <td>
+                                        <div class="d-flex align-items-center">
+                                          <a href="#!"><img src="../assets/images/ecommerce/product-4.jpg" alt="Image" class="img-4by3-md rounded-3 "></a>
+                                          <div class="ms-3">
+                                            <h5 class="mb-0"> <a href="#!" class="text-inherit">Vintage Perfume</a>
+                                            </h5>
+                                            <small>SKU: 1</small>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>1</td>
+                                      <td>$45.29</td>
+                                    </tr> -->
+          
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-5 col-xxl-3 col-12">
+                          <div class="card mb-4 mt-4 mt-lg-0">
+                            <div class="card-header">
+                              <h4 class="mb-0">Order Summary</h4>
+                            </div>
+                            <div class="table-responsive">
+                              <table class="table table-centered mb-0">
+                                <thead class="table-light">
+                                  <tr>
+          
+                                    <th scope="col">Descriptions</th>
+                                    <th scope="col">Amounts</th>
+          
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+          
+                                    <td>Total :</td>
+                                    <td>RM190.00</td>
+          
+                                  </tr>
+                                  <!-- <tr>
+          
+                                    <td>Discount (DIS15%) : </td>
+                                    <td>-$51.00</td>
+          
+                                  </tr> -->
+                                  <tr>
+          
+                                    <td>Shipping Charge :</td>
+                                    <td>RM5.00</td>
+          
+                                  </tr>
+                                  <!-- <tr>
+          
+                                    <td>Tax Vat 19% (included) :</td>
+                                    <td>$64.00</td>
+          
+                                  </tr> -->
+                                  <tr>
+          
+                                    <td>Total Amount</td>
+                                    <td>RM195.00</td>
+          
+                                  </tr>
+          
+          
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header">
+                              <h4 class="mb-0">Payment Details</h4>
+                            </div>
+                            <div class="card-body">
+          
+                              <div>
+                                <ul class="list-unstyled mb-0">
+                                  <li class="d-flex justify-content-between mb-2"><span>Payment Id:
+                                    </span> <span class="text-dark">01</span></li>
+                                  <li class="d-flex justify-content-between mb-2"><span>Payment Method:
+                                    </span> <span class="text-dark">Cash</span></li>
+                                  <!-- <li class="d-flex justify-content-between mb-2"><span>Card Holder Name:
+                                    </span> <span class="text-dark">Harold Gonzalez</span></li>
+                                  <li class="d-flex justify-content-between mb-2"><span>Card Number:
+                                    </span> <span class="text-dark">xxxx xxxx xxxx 6779</span></li> -->
+                                  <li class="d-flex justify-content-between"><span>Total Amount: </span>
+                                    <span class="text-dark ">RM195.00</span></li>
+                                </ul>
+                              </div>
+                            </div>          
+                          </div>
+                        </div>
+                      </div>            
+                    <!-- <div class="btn-container">
+                      <div class="btn" id="prev" onclick="prev()">Previous</div>
+                      <div class="btn" id="next" onclick="next()">Next</div>
+                    </div>  -->                    
+                  </div>
+            <br>
+          </div>     
+            
+        </div>
+    </div>
+</div>
+
+<!--Order details End-->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">F<span class="text-secondary">oo</span>dy</h1>
+                    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

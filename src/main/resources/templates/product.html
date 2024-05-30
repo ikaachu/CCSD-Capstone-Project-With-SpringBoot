@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dessertify-Best dessert Ever</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-body">
+          <div class="cssload-bell">
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+            <div class="cssload-circle">
+              <div class="cssload-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Dessertify<span class="text-secondary"></span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="product.html" class="nav-item nav-link">Products</a>
+                    <a href="testimonial.html" class="nav-item nav-link">Review</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    </a>
+                    <!-- <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
+                        <small class="fa fa-user text-body" ></small>
+                    </a> -->
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="cart.html">
+                        <small class="fa fa-shopping-bag text-body" href="cart.html"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Products</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Product Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0 gx-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="section-header text-start mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <h1 class="display-5 mb-3">Our Products</h1>
+                        <p>Discover the world of OTTO X LOI and embark on a journey of tastes, textures and sensations through our finest creations. 
+                            All of our products use the finest quality halal ingredients.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                        <li class="nav-item me-2">
+                            <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-1">Cakes</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">Pastries </a>
+                        </li>
+                        <li class="nav-item me-0">
+                            <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content">
+
+                <!-- Tab 1 Cakes -->
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Chocolate Cake.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Chocolate Cake</a>
+                                    <span class="text-primary me-1">RM70.00</span>                                   
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span>                                     -->
+                                    <p>Composed of layers of mandarin yuzu jelly, rich chocolate mousse, vanilla pod cremeux, coffee ganache, chocolate pain de genes and chocolate hazelnut strusel.</p>
+                                    <a class="text-center" href="cart.html"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href="cart.html"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Merry Berry Cake.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Merry Berry Cake</a>
+                                    <span class="text-primary me-1">RM80.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
+                                    <p>Layers of red fruit tea coulis, 65 % dark chocolate ganache and chocolate cotton cheesecake on top of a hazelnut croustillant base, encased in dark chocolate chantilly.</p>
+                                    <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Strawberry Charlorlotte.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Strawberry Charlorlotte</a>
+                                    <span class="text-primary me-1">RM90.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
+                                    <p>Indulge in a Strawberrilicious Delight. This luxurious creation is beautiful adorned with fresh strawberries.</p>
+                                    <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="text-center border-top">                               
+                                    <small class="w-50 py-2">                                       
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Mango Charlotte.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Mango Charlotte</a>
+                                    <span class="text-primary me-1">RM100.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
+                                    <p>Gateau Charlotte is elegantly adorned  with freshly diced mangoes, creating bursts of swee, juicy flavors.</p>
+                                    <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Light Cheesecake.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Light Cheesecake</a>
+                                    <span class="text-primary me-1">RM70.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
+                                    <p> Cheesecake made from yogurt and cream cheese gives you a light yet creamy taste and tangy finish, layered with refreshing lychee jelly in the middle and a layer of sakura jelly on top.</p>
+                                    <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div> -->
+                            </div>
+
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Vanilla Sponge.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Vanilla Sponge</a>
+                                    <span class="text-primary me-1">RM80.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
+                                    <p>Chocolate chiffon with sweet and tangy blueberry filling and vanilla panna cotta create a fabulous taste of this cake </p>
+                                    <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Charlotte Ma Belle.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Charlotte Ma Belle</a>
+                                    <span class="text-primary me-1">RM90.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
+                                    <p>A refreshing tropical treat, made of layers of mango castella, tropical fruits coulis, mango passionfruit curd, chrysanthemum chantilly 
+                                        and a crunchy layer of almond croustillant.</p>
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Charlotte Symphony.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Charlotte Symphony</a>
+                                    <span class="text-primary me-1">RM90.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
+                                    <p>Layers of strawberry yuzu jelly, strawberry castella and yuzu curd on top of an almond croustillant base, 
+                                        wrapped in light and spongy orange blossom chantilly. </p>
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Charlotte Violet.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Charlotte Violet</a>
+                                    <span class="text-primary me-1">RM100.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">RM100.00</span> -->
+                                    <p>Layers of blueberry confit, blueberry biscuit and strawberry cremeux on top of an florentine croustillant base, 
+                                        wrapped in light blueberry cheese diplomat and mascarpone chantily. </p>
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cakes/Hazelnut Praline.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Hazelnut Praline</a>
+                                    <span class="text-primary me-1">RM70.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
+                                    <p>Experience dark chocolate like never before with the luxurious Valrhona Caraibe 66% dark chocolate. Every layer uniquely brings out the beautiful authentic tones of dark chocolate—bitter and intense, with notes of dried fruit, toasty almonds, and coffee. </p>
+                                    <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                </div>
+                                <!-- <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                
+
+                <!-- Tab 2 Pastries-->
+                <div id="tab-2" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/Puff pastry fruit tarts.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Puff pastry fruit tarts</a>
+                                    <span class="text-primary me-1">RM 19.00</span>
+                                   
+                                    
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                      
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href="testimonial.html"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                        
+                                        
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/pancakes.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Pancakes</a>
+                                    <span class="text-primary me-1">RM 19.00</span>
+                                   
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                      
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/Blueberry Danish.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Blueberry Danish</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                  
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                      
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/Cheesy Twist Danish.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Cheesy Twist Danish</a>
+                                    <span class="text-primary me-1">RM 19.00</span>
+                                   
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                     
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/Cinnamon Roll.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Cinnamon Roll</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                  
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <!-- <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a> -->
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/French Buttery Raisin Bun.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">French Buttery Raisin Bun</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                   
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                      
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/French Croissant.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">French Croissant</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                               
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                    
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/French Garlic Baguette.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">French Garlic Baguette</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                       
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/Hand Pulled Danish.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Hand Pulled Danish</a>
+                                    <span class="text-primary me-1">RM 19.00</span>
+                                
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                       
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pastries/Korean Cream Cheese Garlic Bread.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Korean Cream Cheese Garlic Bread</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                   
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                       
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="col-12 text-center">
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Tab 3 Cookies-->
+                <div id="tab-3" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Chocolate chip cookies.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Chocolate chip cookies</a>
+                                    <span class="text-primary me-1">RM 19.00</span>
+                                
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                 
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Almond Chocolate.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Almond Chocolate</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                   
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Butter Coffee.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Butter Coffee</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                 
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                    
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Cranberry Butter.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Cranberry Butter</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                      
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Dark Chocolate.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Dark Chocolate</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                 
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Handcrafted Butter.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Handcrafted Butter</a>
+                                    <span class="text-primary me-1">RM 19.00</span>
+                                   
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                       
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Macadamia Coconut.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Macadamia Coconut</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                    
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                       
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Macaron.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Macaron</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                   
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                      
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                          
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Nutty Oat Meal.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Nutty Oat Meal</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                    
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                       
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                          
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cookies/Sea Salt Gallate.PNG" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Sea Salt Gallate</a>
+                                    <span class="text-primary me-1">RM19.00</span>
+                                 
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                  
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                         <a class="text-center" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <!-- <div class="col-12 text-center">
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+    
+ <!-- Testimonial Start -->
+ <div class="container-fluid bg-light bg-icon py-6">
+    <div class="container">
+        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-5 mb-3">Customer Review</h1>
+            <!-- <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p> -->
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p class="mb-4">Reliable service. A variety of delicious quality cakes to choose from.</p>
+                <div class="d-flex align-items-center">
+                    <!-- <img class="flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" alt=""> -->
+                    <div class="ms-3">
+              
+                        <h5 class="mb-1">Jessica Han</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p class="mb-4">The cakes are smooth in texture and is fresh and moist. I love the size which is just the right size for 4-6 people</p>
+                <div class="d-flex align-items-center">
+                    <!-- <img class="flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" alt=""> -->
+                    <div class="ms-3">
+                        <h5 class="mb-1">Ahmad Dani</h5>
+              
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p class="mb-4">Everything!! Superb quality and service!</p>
+                <div class="d-flex align-items-center">
+                    <!-- <img class="flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" alt=""> -->
+                    <div class="ms-3">
+                        <h5 class="mb-1">Muhammad Raihan</h5>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p class="mb-4">The cakes are smooth in texture and is fresh and moist. I love the size which is just the right size for 4-6 people.</p>
+                <div class="d-flex align-items-center">
+                    <!-- <img class="flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" alt=""> -->
+                    <div class="ms-3">
+                        <h5 class="mb-1">Anna Cathrie</h5>
+                        <!-- <span>Profession</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+  
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h1 class="fw-bold text-primary mb-4">F<span class="text-secondary">oo</span>dy</h1>
+                <p>Yummy & delicious dessert</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Address</h4>
+                <p><i class="fa fa-map-marker-alt me-3"></i>123 Jalan Ampang, Kuala Lumpur</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope me-3"></i>dessertify@gmail.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Our Services</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+                <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Newsletter</h4>
+                <p>Subscribe to get notified about new items</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">Dessertify</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
